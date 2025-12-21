@@ -1,0 +1,12 @@
+{
+  "name": "@daaku/sw-vite",
+  "author": "Naitik Shah <n@daaku.org>",
+  "version": "0.1.0",
+  "description": "Simple ServiceWorker for Vite SPAs.",
+  "repository": "git@github.com:daaku/sw-vite",
+  "license": "MIT",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": { "@types/bun": "latest" },
+  "peerDependencies": { "typescript": "^5" }
+}
