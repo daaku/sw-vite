@@ -1,13 +1,14 @@
 name: Publish
 on:
-  push:
-    tags:
-      - 'v*'
-
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Type of version bump'
+        required: true
+        default: 'minor'
 permissions:
   id-token: write # Required for OIDC
-  contents: read
-
+  contents: write
 jobs:
   publish:
     name: Publish
@@ -19,4 +20,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - uses: actions/checkout@v6
       - run: npm install
+      - name: Bump Version
+        run: |
+          git config --global user.name 'Naitik Shah'
+          git config --global user.email 'daaku@users.noreply.github.com'
+          npm version ${{ github.event.inputs.version }}
+          git push && git push --tags
       - run: npm publish
