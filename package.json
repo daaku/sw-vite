@@ -5,8 +5,8 @@
   "description": "Simple ServiceWorker for Vite SPAs.",
   "repository": "git@github.com:daaku/sw-vite",
   "license": "MIT",
-  "module": "index.ts",
+  "module": "index.js",
   "type": "module",
-  "devDependencies": { "@types/bun": "latest" },
+  "devDependencies": { "@types/bun": "latest", "vite": "8.0.0-beta.3" },
   "peerDependencies": { "typescript": "^5" }
 }
