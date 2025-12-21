@@ -1,3 +1,4 @@
 /.github
 /.vscode
+/bun.lock
 /tsconfig.json
