@@ -1,7 +1,7 @@
 {
   "name": "@daaku/sw-vite",
   "author": "Naitik Shah <n@daaku.org>",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Simple ServiceWorker for Vite SPAs.",
   "repository": {
     "type": "git",
@@ -11,5 +11,7 @@
   "module": "index.js",
   "types": "index.d.ts",
   "type": "module",
-  "devDependencies": { "vite": "8.0.0-beta.3" }
+  "devDependencies": {
+    "vite": "8.0.0-beta.3"
+  }
 }
