@@ -8,7 +8,7 @@ export function swPlugin(
   return {
     name: 'sw-plugin',
     configureServer(server) {
-      server.middlewares.use((req, res, next) => {
+      server.middlewares.use((req, _res, next) => {
         if (req.url?.startsWith(`/${output}`)) {
           req.url = req.url.replace(output, input)
         }
