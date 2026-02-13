@@ -12,6 +12,6 @@
   "types": "index.d.ts",
   "type": "module",
   "devDependencies": {
-    "vite": "8.0.0-beta.7"
+    "vite": "8.0.0-beta.14"
   }
 }
