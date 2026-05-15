@@ -11,7 +11,5 @@
   "module": "index.js",
   "types": "index.d.ts",
   "type": "module",
-  "devDependencies": {
-    "vite": "8.0.12"
-  }
+  "devDependencies": { "vite": "^8.0.13" }
 }
